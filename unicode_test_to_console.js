@@ -37933,10 +37933,10 @@ var unicodeLookup = [{"h":"2E80","c":"⺀"},
 	var output = "";
 	hex = string.split(" ");
 	for (i = 0; i < hex.length; i++) {
-		for (j = 0; j < unicode.length; j++) {
-			if (unicode[j].h == hex[i]) {
-				output = output + unicode[j].c;
-				j=unicode.length+1;
+		for (j = 0; j < unicodeLookup.length; j++) {
+			if (unicodeLookup[j].h == hex[i]) {
+				output = output + unicodeLookup[j].c;
+				j=unicodeLookup.length+1;
 			}
 		}
 	}
